@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eren Yalçın | Ana Sayfa</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Eren Yalçın Cube Trainer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Eren Yalçın</h1>
-    <p>Speedcubing Algoritmaları ve Rehberleri</p>
-  </header>
-  <nav>
-    <a href="2x2.html">2x2 CLL</a>
-    <a href="3x3.html">3x3 CFOP</a>
-    <a href="timer.html">Timer</a>
-  </nav>
-  <main>
-    <h2>Hoş Geldin!</h2>
-    <p>Bu site Rubik Küp algoritmalarını öğrenmen için oluşturuldu. Yukarıdan bir bölüm seçerek başlayabilirsin.</p>
-  </main>
-  <footer>
-    &copy; 2025 Eren Yalçın
-  </footer>
+  <div class="app">
+    <header>
+      <div class="logo">ErenCube</div>
+      <nav>
+        <button id="btn-algs">Algs</button>
+        <button id="btn-trainer">Trainer</button>
+        <button id="btn-settings">Ayarlar</button>
+      </nav>
+    </header>
+    <aside class="sidebar">
+      <ul>
+        <li data-page="cll-2x2">2×2 CLL</li>
+        <li data-page="oll-3x3">3×3 OLL</li>
+        <li data-page="pll-3x3">3×3 PLL</li>
+        <!-- Daha fazlası eklenecek -->
+      </ul>
+    </aside>
+    <main>
+      <div id="page-cll-2x2" class="page active">
+        <h2>2×2 CLL Trainer</h2>
+        <div class="controls">
+          <button id="shuffle">Karıştır</button>
+          <button id="start-train">Train</button>
+          <button id="view-all">All Cases</button>
+        </div>
+        <div class="grid" id="cll-grid"></div>
+      </div>
+      <div id="page-oll-3x3" class="page">
+        <h2>3×3 OLL (Yakında)</h2>
+      </div>
+      <div id="page-pll-3x3" class="page">
+        <h2>3×3 PLL (Yakında)</h2>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
