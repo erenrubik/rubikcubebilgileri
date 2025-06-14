@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rubik Küp Eğitimi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #f1f1f1;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #000;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px #000;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #0ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1a1a1a;
+      padding: 10px 0;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #0ff3;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #0ff;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      margin-bottom: 15px;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rubik Küp Eğitimi</h1>
+  </header>
+
+  <nav>
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#kupnedir">Küp Nedir?</a>
+    <a href="#cozum">Nasıl Çözülür?</a>
+    <a href="#yarisma">Yarışmalar</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+  </nav>
+
+  <section id="anasayfa" class="hero">
+    <h2>Hoş Geldin!</h2>
+    <p>Rubik Küp dünyasına adım atmaya hazır mısın? Temelleri öğren, çözmeyi geliştir, yarışmalara katıl!</p>
+  </section>
+
+  <section id="kupnedir">
+    <h2>Rubik Küp Nedir?</h2>
+    <p>Rubik Küp, 1974 yılında Erno Rubik tarafından icat edilen, 3 boyutlu bir zeka oyunudur. 3x3x3 boyutlu klasik küp, yüzeylerindeki renkleri eşleştirmek için döndürülür. Günümüzde 2x2'den 17x17'ye kadar çeşitli versiyonları mevcuttur.</p>
+    <p>Küp çözmek; algoritma, hafıza ve el becerisi gerektirir. Hem eğlenceli hem de öğreticidir.</p>
+  </section>
+
+  <section id="cozum">
+    <h2>Nasıl Çözülür?</h2>
+    <p>En yaygın yöntem CFOP sistemidir:</p>
+    <ul>
+      <li><strong>Cross (Haç):</strong> Beyaz haç yapılır</li>
+      <li><strong>F2L:</strong> Alt iki katman tamamlanır</li>
+      <li><strong>OLL:</strong> Üst yüzeyde tüm renkler aynı yapılır</li>
+      <li><strong>PLL:</strong> Son olarak köşeler/dışlar yerleştirilir</li>
+    </ul>
+    <p>Alternatif olarak: LBL (Layer by Layer), Roux, ZZ gibi sistemler de vardır.</p>
+  </section>
+
+  <section id="yarisma">
+    <h2>Yarışmalara Nasıl Katılırım?</h2>
+    <p>Resmi Rubik Küp yarışmaları, <strong>WCA (World Cube Association)</strong> tarafından düzenlenir. Katılmak için:</p>
+    <ol>
+      <li><a href="https://www.worldcubeassociation.org" target="_blank">WCA sitesine</a> gir</li>
+      <li>Hesap oluştur</li>
+      <li>Yakınındaki yarışmaları listele</li>
+      <li>Online olarak kaydol</li>
+    </ol>
+    <p>İlk yarışmanda 3x3 çözüm süren 10 dakikanın altındaysa katılabilirsin!</p>
+  </section>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>Bu site, küpçülere yol göstermek için hazırlanmıştır. Küp nedir, nasıl çözülür, nasıl hızlanılır ve yarışmalara nasıl katılırım sorularının yanıtı burada.</p>
+    <p>Hazırlayan: <strong>Eren</strong> – Bir küp tutkunu ve eğitmeni.</p>
+  </section>
+
+  <footer>
+    © 2025 KüpEğitimi.com | Tüm hakları saklıdır.
+  </footer>
+
+</body>
+</html>
